@@ -66,7 +66,7 @@
 
 <h2>What we send to service providers</h2>
 <ul>
-  <li><strong>Supabase</strong> (database, authentication and server functions) stores the data listed above. TODO: specify the hosting region and cross-border transfer safeguards.</li>
+  <li><strong>Supabase</strong> (database, authentication and server functions) stores the data listed above when account features are turned on. The offline version of the app does not use Supabase and sends nothing to it. When it is enabled, the database will be hosted in the AWS Mumbai region (ap-south-1), and transfers outside your country are covered by Supabase's data processing terms.</li>
   <li><strong>Anthropic (Claude API)</strong> writes the text of your reading and fingerprint summary. It receives only theme tags (such as "keen_observer"), coarse result bands and your language, never images, names or emails.</li>
   <li><strong>RevenueCat, Apple and Google</strong> process subscriptions and payments. We never see your card details.</li>
   <li><strong>Sentry</strong> (optional crash reporting) receives technical error reports without personal data or screenshots.</li>
