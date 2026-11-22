@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Firasa Privacy Policy</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 16px; line-height: 1.6; color: #1f2430; background: #fff; }
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.15rem; margin-top: 1.8rem; }
+  .draft { background: #fff4d6; border: 1px solid #e6c36a; padding: 10px 14px; border-radius: 8px; }
+  .short { background: #f3f0ff; padding: 12px 16px; border-radius: 8px; }
+  code { background: #f2f2f2; padding: 1px 4px; border-radius: 4px; }
+</style>
+</head>
+<body>
+
+<h1>Firasa Privacy Policy</h1>
+
+<p class="draft"><strong>DRAFT — requires legal review before publication.</strong> Version 2026-11-draft-1. Items marked TODO must be completed before this page is linked from the store.</p>
+
+<p>This policy explains what the Firasa app ("Firasa", "we") processes, why, and the choices you have. It is written to align with the UAE Personal Data Protection Law (Federal Decree-Law No. 45 of 2021), the Saudi Personal Data Protection Law, the Apple App Store guidelines on face data and Google Play's data safety rules. TODO: confirm the controller entity, registered address and data protection contact.</p>
+
+<div class="short">
+<h2 style="margin-top:0">The short version</h2>
+<ul>
+  <li>Your photo never leaves your phone. Face analysis runs on your device and the camera frames are deleted from memory right after processing.</li>
+  <li>We never store or upload images, face landmarks or facial measurements.</li>
+  <li>Firasa is for self-reflection and entertainment. It must not be used to make decisions about anyone.</li>
+  <li>You can export or permanently delete all your data at any time from the Privacy Center.</li>
+</ul>
+</div>
+
+<h2>What we process on your device only</h2>
+<ul>
+  <li>Live camera frames from the front camera, during a face reading.</li>
+  <li>Face landmarks and geometric ratios computed from those frames.</li>
+</ul>
+<p>These are kept in memory for a few seconds, turned into abstract categories (for example "oval face shape" or "wide-set eyes"), and then discarded. They are never written to storage and never sent to us.</p>
+
+<p><strong>Voice narrator.</strong> If it is switched on (Settings → Sound), the text of your reveal cards is read aloud by your phone's own text-to-speech engine. Only that text is passed to the engine. No photo or face data is involved and nothing is recorded. If your phone has no voice installed for the language, the engine (for example Google's) may turn the text into speech on its own servers, under its provider's terms. To keep it on the phone, install the voice in your phone's text-to-speech settings, or switch the narrator off. For Persian, the app plays recordings bundled in the app, made in advance with a computer voice (Microsoft Azure AI Speech); playing them sends nothing.</p>
+
+<h2>Photos of other people, duo selfies and the expression challenge</h2>
+<ul>
+  <li><strong>A photo of someone else</strong> is chosen through the system photo picker only after you confirm that its owner agreed, is 16 or older, and that the result will not be used to judge them. Firasa does not get access to your photo library. The app reads that one photo on the device, deletes its temporary copy right after the face is detected, and keeps only the resulting themes, on your device.</li>
+  <li><strong>A duo selfie</strong> scans the two people one after the other with the live camera, after both confirm. The frames are processed in memory like a personal reading. One selfie of each person is kept in memory only to show the two of you side by side on the result screen; both are deleted when you leave that screen and are never saved, synced or shared. The result (each person's themes and the pair's "chemistry type") is stored only on your device.</li>
+  <li><strong>The expression challenge</strong> reads facial-expression scores from the live camera in memory to award points. Only the round score is kept, on your device.</li>
+  <li><strong>The makeup try-on</strong> (Style Studio) draws colours on the live camera image using face points computed in memory, and only while exactly one face is in view. Nothing is recorded, saved or uploaded, and no photo can be taken.</li>
+</ul>
+<p>None of this is uploaded, synced or used in your Personality Fingerprint. Deleting your data removes it.</p>
+
+<h2>Comparing with friends</h2>
+<p>If you create or accept an invite code, you and that friend can see each other's display name, Big Five bands (low, average or high) and dominant heritage temperament. Percentiles, answers, photos and face data are never shared. Either of you can stop sharing at any time, and deleting your account removes the link.</p>
+
+<h2>What we store</h2>
+<ul>
+  <li>Account data: an account identifier, and your email if you sign in with email, Apple or Google.</li>
+  <li>Profile: the display name you choose and, optionally, the grammatical form used for Arabic wording.</li>
+  <li>Age confirmation: only the fact that you met the minimum age and when, not your birth year.</li>
+  <li>Consents: which terms, privacy and face-processing notices you accepted, and their versions.</li>
+  <li>Questionnaire results: scores and bands. Raw answers are kept on your device only while a test is in progress.</li>
+  <li>Face reading results (your own readings only): abstract categories, heritage theme tags and the written reading.</li>
+  <li>Friend links: which accounts agreed to compare results, and when.</li>
+  <li>Subscription status, provided by our payments partner.</li>
+</ul>
+
+<h2>What we send to service providers</h2>
+<ul>
+  <li><strong>Supabase</strong> (database, authentication and server functions) stores the data listed above. TODO: hosting region and cross-border transfer safeguards.</li>
+  <li><strong>Anthropic (Claude API)</strong> writes the text of your reading and fingerprint summary. It receives only theme tags (such as "keen_observer"), coarse result bands and your language, never images, names or emails.</li>
+  <li><strong>RevenueCat, Apple and Google</strong> process subscriptions and payments. We never see your card details.</li>
+  <li><strong>Sentry</strong> (optional crash reporting) receives technical error reports without personal data or screenshots.</li>
+</ul>
+<p>Note for the offline build: when the app is built without backend keys, none of the services above receive any data.</p>
+
+<h2>Why we process data (legal bases)</h2>
+<ul>
+  <li>To provide the app and your account (performance of a contract).</li>
+  <li>Face processing on your device, with your explicit consent, which you can withdraw at any time by not using the feature and by deleting your data.</li>
+  <li>To meet legal obligations, such as keeping records of consent.</li>
+</ul>
+<p>We do not sell personal data and do not use it for advertising profiles. Analytics events never include your traits or results.</p>
+
+<h2>Retention</h2>
+<p>We keep your data while your account exists. When you delete your data, we delete your account and all your results from our servers and from your device. TODO: backup retention period.</p>
+
+<h2>Your rights</h2>
+<p>Depending on where you live, you can ask to access, correct, export or delete your data, to restrict or object to processing, and to withdraw consent. Most of this is built into the Privacy Center. For anything else, contact us at TODO: privacy contact email.</p>
+
+<h2>Children</h2>
+<p>Firasa is for people aged 16 and over (or a higher minimum age where the law requires it). If you believe a younger person has used the app, contact us and we will delete the data.</p>
+
+<h2>Changes</h2>
+<p>We will notify you in the app about material changes and ask for your consent again where required.</p>
+
+</body>
+</html>
